@@ -1,0 +1,148 @@
+body{
+  font-size: 18px; font-family: cursive;background: black;color: white;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin-top: 1%; margin-bottom: 1%;padding: 0%;
+}
+li{
+  list-style: none;
+}
+a{
+ text-decoration:none;
+}
+header{
+  text-align: center; padding: 4%; color: white;
+  background: radial-gradient(#bb112a, #913334, #bb112a, #913334);
+  margin-bottom: 0.5%;
+}
+
+header h2{
+	color: white;
+text-shadow: 1px 1px 2px black, 0 0 25px lightblue, 0 0 5px #B22222;
+}
+
+header article img{
+	width:5%; border-radius: 50%;
+}
+
+section{
+  background: #f37d73;
+  display: flex; flex-direction: row;
+text-align: center;
+justify-content: space-around;
+padding: 2%;
+margin-top: 0.5%;
+
+}
+
+.sidebar{
+	background: linear-gradient(to right, #b22222, #955251, #b22222, #955251);
+	background: -moz-linear-gradient(right, #b22222, #955251, #b22222, #955251);
+width: 25%; margin-right: 2%; padding: 1%; border-radius: 10%;
+}
+
+.sidebar ul{
+	display: flex; flex-flow: column wrap;
+}
+
+.sidebar ul li{
+	margin: 1%; padding: 4%; background: #FF6347;
+flex-grow: 1; margin-bottom: 2%;
+}
+
+.sidebar ul li:hover{
+	background: #b20000;
+}
+
+.sidebar ul li a{
+	color: white;
+}
+
+.sidebar ul li ul{
+	display: none;
+}
+
+.sidebar ul li ul li p{
+	margin: 1%; padding: 0.5%; background: #FF6347;
+text-align: center; border-radius: 10%;
+}
+
+.sidebar ul li:hover ul{
+	display: block; background: #b20000;
+}
+
+.sidebar ul li ul li{
+background: #b20000;
+}
+
+.sidebar ul li ul li a:hover{
+color: yellow;
+}
+
+.image{
+	background: linear-gradient(#b22222, #955251, #b22222, #955251);
+
+	background: -moz-linear-gradient(#b22222, #955251, #b22222, #955251);
+	width: 75%; margin-right: 2%; padding: 1%; border-radius: 10%;
+}
+
+
+  .image img{
+  width:30%;
+border-radius: 10px 60px;
+transition:transform 2s;
+
+
+}
+
+.image img:hover{
+  transform: rotate(360deg);
+
+}
+
+.image p{
+	font-size: 20px; color: black; text-shadow: 0 0 3px white, 0 0 5px grey;
+}
+
+footer{
+    background: radial-gradient(#bb112a, #913334, #bb112a, #913334);
+
+    justify-content: space-around;
+color: white;
+text-size: 18px;
+text-aligm: center;
+padding: 1.5%;
+margin-bottom: 0.5%;
+display: flex; flex-direction: row;
+
+}
+
+@media all and (max-width: 600px){
+	section{
+	flex-direction: column;
+}
+
+.sidebar{
+	width:100%;
+margin-bottom: 5px;
+}
+
+.image{
+	width: 100%;
+}
+
+footer{
+	flex-direction: column;
+}
+
+footer article{
+	width: 100%;
+	margin-bottom: 1 px solid black;
+text-align: center;
+}
+
+footer article: last child{
+margin-bottom: none;
+}
+
+}
