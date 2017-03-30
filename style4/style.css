@@ -1,5 +1,6 @@
 body{
-  font-size: 18px; font-family: cursive;background:#63AB62;
+  font-size: 18px; font-family: cursive;background-image: url("green.jpg");
+  background-size: cover;
   color: white;
   margin: 2%;
 }
@@ -14,8 +15,7 @@ a{
 }
 header{
   text-align: center; padding: 4%; color: white;
-  background-image: url("shades.jpg");
-  background-size: cover;
+  background:#7CCD7C;
   margin-bottom: 0.5%;
 }
 
@@ -25,7 +25,10 @@ text-shadow: 1px 1px 2px black, 0 0 25px lightblue, 0 0 5px #B22222;
 }
 
 header article img{
-	width:5%; border-radius: 50%;
+	width:5%;border-radius: 50%;transition: width 2s;
+}
+header article img:hover{
+  width:6%; height:6%;
 }
 
 section{
@@ -34,9 +37,7 @@ section{
   justify-content: space-around; padding: 2%; margin-top: 0.5%;
 }
 .sidebar{
-  background-image: url("image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background:#3CB371;
   width: 25%; margin-right: 2%;padding: 1%; border-radius: 10%;
 }
 .sidebar ul{
@@ -44,6 +45,7 @@ section{
 }
 .sidebar ul li{
   margin:1%;padding: 4%;background:#20BF9F; flex-grow: 1; margin-bottom: 2%;
+  margin-right: 10%;
 }
 .sidebar ul li:hover{
   background: #00FFAA;
@@ -67,22 +69,50 @@ section{
   color: #068481;
 }
 .para{
-  background-image: url("1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background:#3CB371;
   width:75%;
   color: black;
   font-family:cursive;
 }
 footer{
-  background-image: url("shades.jpg");
-  background-size: cover;
-justify-content: space-around;
-color: white;
-text-size: 18px;
-text-aligm: center;
-padding: 1.5%;
-margin-bottom: 0.5%;
-display: flex; flex-direction: row;
+  background:#7CCD7C;
+  justify-content: space-around;
+  color: white;
+  text-size: 18px;
+  text-aligm: center;
+  padding: 1.5%;
+  margin-bottom: 0.5%;
+  display: flex; flex-direction: column;
+}
+footer article h3{
+  text-align: center;
+}
+@media all and (max-width: 600px){
+	section{
+	flex-direction: column;
+}
+
+.sidebar{
+	width:100%;
+margin-bottom: 2%;
+}
+
+.para{
+	width: 100%;
+}
+
+footer{
+	flex-direction: column;
+}
+
+footer article{
+	width: 100%;
+	margin-bottom: 1 px solid black;
+text-align: center;
+}
+
+footer article: last child{
+margin-bottom: none;
+}
 
 }

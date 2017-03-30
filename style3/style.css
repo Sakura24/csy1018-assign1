@@ -1,5 +1,8 @@
 body{
-  font-size: 18px; font-family: cursive;background-image:url("feather.jpg");
+  font-size: 18px; font-family: cursive; background: linear-gradient(	#778899,	#87CEEB,#87CEFA,	#778899);
+  background: -moz-linear-gradient(	#778899,	#87CEEB,#87CEFA,	#778899);
+  background: -o-linear-gradient(#778899,	#87CEEB,#87CEFA,	#778899);
+  background: -webkit-linear-gradient(#778899,	#87CEEB,#87CEFA,	#778899);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -26,16 +29,17 @@ text-shadow: 1px 1px 2px black, 0 0 25px lightblue, 0 0 5px #B22222;
 }
 
 header article img{
-	width:5%; border-radius: 50%;
+	width:5%;border-radius: 50%;transition: width 2s;
+}
+header article img:hover{
+  width:6%; height:6%;
 }
 section{
   background:#517693; display: flex;flex-direction: row ;text-align: center;
   justify-content: space-around; padding: 2%; margin-top: 0.5%;
 }
 .sidebar{
-  background-image:url("images.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background:#B0C4DE;
   width: 25%; margin-right: 2%;padding: 1%; border-radius: 10%;
 }
 .sidebar ul{
@@ -43,6 +47,7 @@ section{
 }
 .sidebar ul li{
   margin:1%;padding: 4%;background:#607B8B; flex-grow: 1; margin-bottom: 2%;
+  margin-right: 10%;
 }
 .sidebar ul li:hover{
   background: #006DB0;
@@ -66,11 +71,20 @@ section{
   color: yellow;
 }
 .word{
-  background:url("image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background:#B0C4DE;
   width:75%;
   color:black;
+  text-align:justify;
+}
+.word h2{
+  text-align: center;
+}
+.word p{
+  margin-left: 3%;
+}
+.word h3{
+  margin-left: 3%;
+  margin-top:  4%;
 }
 footer{
 background: #42C0FB;
@@ -80,6 +94,38 @@ text-size: 18px;
 text-aligm: center;
 padding: 1.5%;
 margin-bottom: 0.5%;
-display: flex; flex-direction: row;
+display: flex; flex-direction: column;
+}
+footer article h3{
+  text-align: center;
+  text-shadow: 2px 4px 2px black;
+}
+@media all and (max-width: 600px){
+	section{
+	flex-direction: column;
+}
+
+.sidebar{
+	width:100%;
+margin-bottom: 2%;
+}
+
+.word{
+	width: 100%;
+}
+
+footer{
+	flex-direction: column;
+}
+
+footer article{
+	width: 100%;
+	margin-bottom: 1 px solid black;
+text-align: center;
+}
+
+footer article: last child{
+margin-bottom: none;
+}
 
 }
