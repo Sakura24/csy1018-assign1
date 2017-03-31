@@ -1,6 +1,5 @@
 body{
-  font-size: 18px; font-family: cursive;background-image: url("green.jpg");
-  background-size: cover;
+  font-size: 18px; font-family: cursive;background:#00FFAA;
   color: white;
   margin: 2%;
 }
@@ -21,7 +20,7 @@ header{
 
 header h2{
 	color: white;
-text-shadow: 1px 1px 2px black, 0 0 25px lightblue, 0 0 5px #B22222;
+text-shadow: 3px 3px 3px black;
 }
 
 header article img{
@@ -67,12 +66,22 @@ section{
 }
 .sidebar ul li ul li a:hover{
   color: #068481;
+
 }
 .para{
   background:#3CB371;
   width:75%;
   color: black;
   font-family:cursive;
+}
+
+.para p{
+  text-align: justify;
+  margin:4%;
+  color:white;
+}
+.para img{
+  width:30%;margin-top: 1%;border-radius: 15% 50%
 }
 footer{
   background:#7CCD7C;
@@ -86,6 +95,13 @@ footer{
 }
 footer article h3{
   text-align: center;
+  text-shadow: 3px 3px 3px black;
+}
+.logo {
+  text-align: right;
+}
+.logo img{
+width:3%; border-radius: 50%;
 }
 @media all and (max-width: 600px){
 	section{
