@@ -21,10 +21,10 @@ text-shadow: 3px 3px 3px black;
 }
 
 header article img{
-	width:5%; border-radius: 50%;
+	width:5%;border-radius: 50%;transition: width 2s;
 }
 header article img:hover{
-  width:6%;
+  width:6%; height:6%;
 }
 section{
   background:#f1d375;
