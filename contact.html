@@ -44,16 +44,51 @@
         </ul>
     </div>
     <div class="sent">
-      <p>This is my bio page.</p>
-      <p>This is my bio page.</p>
-      <p>This is my bio page.</p>
-      <p>This is my bio page.</p>
-      <p>This is my bio page.</p>
-      <p>This is my bio page.</p>
-      <p>This is my bio page.</p>
-      <p>This is my bio page.</p>
-      <p>This is my bio page.</p>
-      <p>This is my bio page.</p>
+      <h2> Contact form</h2>
+      <form method="post" action="" onsubmit="return validate(this)">
+      <fieldset>
+        <legend><b>Contact form</b></legend>
+        <lable>First Name:</lable>
+        <input type="text" name="name" placeholder="Enter first name" ><br><br>
+        <lable>Last Name:</lable>
+        <input type="text" name="name" placeholder="Enter last name" ><br><br>
+        <lable>Address:</lable>
+        <input type="text" name="address" placeholder="Enter address"><br><br>
+        <lable>Email:</lable>
+        <input type="email" name="email" placeholder="Enter email"><br><br>
+        <lable>Contact:</lable>
+        <input type="contact" name="contact" placeholder="Enter contact"><br><br>
+        <lable>Gender:</lable>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other
+        <br></br>
+        <lable>Country</label>
+          <select name="country">
+              <option value="Australia">Bhutan</<option>
+              <option value="Bangladesh">Bangladesh</<option>
+              <option value="Bhutan">Bhutan</<option>
+              <option value="China">China</<option>
+              <option value="France">France</<option>
+              <option value="Germany">Germany</<option>
+              <option value="India">India</<option>
+              <option value="Japan">Japan</<option>
+              <option value="Korea">Korea</<option>
+              <option value="Nepal">Nepal</<option>
+              <option value="Pakistan">Pakistan</<option>
+              <option value="Russia">Russia</<option>
+              <option value="Spain">Spain</<option>
+              <option value="SriLanka">SriLanka</<option>
+              <option value="United Kingdom">United Kingdom</<option>
+              <option value="United States">United States</<option>
+        <select><br><br>
+          <label>Comments:</label>
+          <textarea name="comments" row="5" cols="70" placeholder="Comments"></textarea><br><br>
+          <label>Date:</label>
+          <input type="date" name="date"><br><br>
+          <input type="submit" name="Submit" value="Submit">
+      </fieldset>
+      </form>
     </div>
   </section>
   <hr>
