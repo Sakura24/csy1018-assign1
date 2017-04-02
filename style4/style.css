@@ -81,7 +81,10 @@ section{
   color:white;
 }
 .para img{
-  width:30%;margin-top: 1%;border-radius: 15% 50%
+  width:30%;margin-top: 1%;border-radius: 15% 50% ;transition: width 4s;
+}
+.para img:hover{
+  width:40%; border-radius: 20% 55%;
 }
 footer{
   background:#7CCD7C;

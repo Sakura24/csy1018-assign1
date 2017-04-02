@@ -110,7 +110,7 @@ transition:transform 2s;
 }
 
 .image p{
-	font-size: 20px; color: black; color:
+	font-size: 20px; color: black; color; text-align: center;
 }
 
 footer{
