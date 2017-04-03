@@ -71,10 +71,13 @@ section{
   color: yellow;
 }
 .word{
-  background:#B0C4DE;
+/*  background:#B0C4DE;*/
+  background:#517693;
   width:75%;
   color:black;
   text-align:justify;
+  display: flex;flex-direction:column;
+
 }
 .word h2{
   text-align: center;
@@ -85,6 +88,30 @@ section{
 .word h3{
   margin-left: 3%;
   margin-top:  4%;
+}
+.word .first{
+  background:#B0C4DE;
+  margin:2%;
+}
+
+.word .second{
+  background:#B0C4DE;
+  margin:2%;
+}
+
+.word .third{
+  background:#B0C4DE;
+  margin:2%;
+}
+
+.word .fourth{
+  background:#B0C4DE;
+  margin: 2%;
+}
+
+.word .fifth{
+  background:#B0C4DE;
+  margin: 2%;
 }
 footer{
 background: #ADD8E6;
