@@ -115,6 +115,9 @@ transition:transform 2s;
 
 footer{
     background: radial-gradient(#bb112a, #913334, #bb112a, #913334);
+    background: -moz-radial-gradient(#bb112a, #913334, #bb112a, #913334);
+    background: -webkit-radial-gradient(#bb112a, #913334, #bb112a, #913334);
+    background: -o-radial-gradient(#bb112a, #913334, #bb112a, #913334);
 
     justify-content: space-around;
 color: black;

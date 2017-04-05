@@ -42,6 +42,7 @@ section{
 }
 .sidebar ul li{
   margin:1%;padding: 4%;background:#e9951e; flex-grow: 1; margin-bottom: 2%;
+  margin-right: 10%;
 }
 .sidebar ul li:hover{
   background: 	#F4A460;
@@ -129,6 +130,15 @@ input[type=date], select {
       border-radius: 5px;
 
     }
+  .sent h2{
+    margin-left: 2%;
+  }
+  .sent p{
+    margin-left: 2%;
+  }
+  .sent img{
+    width:20%;
+  }
 
 footer{
   background: radial-gradient(#e9951e, #efe299, #e4951e, #efe299);
