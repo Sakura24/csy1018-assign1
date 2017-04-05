@@ -33,8 +33,7 @@ section{
 }
 .sidebar{
   background:radial-gradient(#FAFAD2,#F0E68C,#F0E68C,#FAFAD2,#F0E68C,#F0E68C,#FAFAD2,#F0E68C,#F0E68C);
-  background-repeat: no-repeat;
-  background-size: cover;
+
   width: 25%; margin-right: 2%;padding: 1%; border-radius: 10%;
 }
 .sidebar ul{
@@ -80,7 +79,7 @@ input[type=text], select {
     padding: 2% 2%;
     margin: 1% 0;
     display: inline-block;
-    border: 1% solid ;
+    border: 2px  ;
     border-radius: 5px;
 
 }
@@ -89,7 +88,7 @@ input[type=email], select {
     padding: 2% 2%;
     margin: 1% 0;
     display: inline-block;
-    border: 1% solid ;
+    border: 2px  ;
     border-radius: 5px;
 
 }
@@ -98,7 +97,7 @@ input[type=contact], select {
     padding: 2% 2%;
     margin: 1% 0;
     display: inline-block;
-    border: 1% solid ;
+    border: 2px  ;
     border-radius: 5px;
 
 }
@@ -107,7 +106,7 @@ input[type=submit], select {
     padding: 2% 2%;
     margin: 1% 0;
     display: inline-block;
-    border: 1% solid ;
+    border: 2px  ;
     border-radius: 5px;
 
 }
@@ -116,7 +115,7 @@ input[type=date], select {
     padding: 2% 2%;
     margin: 1% 0;
     display: inline-block;
-    border: 1% solid ;
+    border: 2px  ;
     border-radius: 5px;
 
   }
@@ -126,7 +125,7 @@ input[type=date], select {
       padding: 2% 2%;
       margin: 1% 0;
       display: inline-block;
-      border: 1% solid ;
+      border: 2px  ;
       border-radius: 5px;
 
     }
@@ -138,13 +137,14 @@ input[type=date], select {
   }
   .sent img{
     width:20%;
+
   }
 
 footer{
   background: radial-gradient(#e9951e, #efe299, #e4951e, #efe299);
   color: white;
-  text-size: 18px;
-  text-aligm: center;
+  font-size: 18px;
+  text-align: center;
   padding: 1.5%;
   margin-bottom: 0.5%;
   display: flex; flex-direction: column;
@@ -173,6 +173,9 @@ margin-bottom: 2%;
 .sent{
 	width: 100%;
 }
+input[type=submit]{
+  width:100%;
+}
 
 footer{
 	flex-direction: column;
@@ -184,7 +187,7 @@ footer article{
 text-align: center;
 }
 
-footer article: last child{
+footer article:last-child{
 margin-bottom: none;
 }
 

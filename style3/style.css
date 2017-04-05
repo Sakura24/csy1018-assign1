@@ -71,7 +71,7 @@ section{
   color: yellow;
 }
 .word{
-/*  background:#B0C4DE;*/
+
   background:#517693;
   width:75%;
   color:black;
@@ -117,8 +117,8 @@ footer{
 background: #ADD8E6;
 justify-content: space-around;
 color: white;
-text-size: 18px;
-text-aligm: center;
+font-size: 18px;
+text-align: center;
 padding: 1.5%;
 margin-bottom: 0.5%;
 display: flex; flex-direction: column;
@@ -153,11 +153,11 @@ footer{
 
 footer article{
 	width: 100%;
-	margin-bottom: 1 px solid black;
+	margin-bottom: 1px solid black;
 text-align: center;
 }
 
-footer article: last child{
+footer article:last-child{
 margin-bottom: none;
 }
 
