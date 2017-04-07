@@ -1,5 +1,7 @@
+/*Mijala Shakya*/
 body{
-  font-size: 18px; font-family: cursive;background: black;color: white;
+  font-size: 18px; font-family: cursive;background: #7f7fff;color: white;
+  margin:2%;
 }
 h1,h2,h3,h4,h5,h6,p{
   margin-top: 1%; margin-bottom: 1%;padding: 0%;
@@ -8,45 +10,43 @@ li{
   list-style: none; /*prevents the appearence of ordered list and unordered list*/
 }
 a{
- text-decoration:none;
+ text-decoration:none; /*to prevent underline is hyperlink*/
 }
 header{
   text-align: center; padding: 4%; color: white;
-  background: radial-gradient(#bb112a, #913334, #bb112a, #913334); /*this code is used for google chrome*/
-  background: -moz-radial-gradient(#bb112a, #913334, #bb112a, #913334); /*this code is used for mozilla firefox*/
-  background: -webkit-radial-gradient(#bb112a, #913334, #bb112a, #913334); /*this code is used for safari*/
-  background: -o-radial-gradient(#bb112a, #913334, #bb112a, #913334); /*this code is used for opera*/
+  background: linear-gradient(to right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for google chrome*/
+  background: -moz-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for mozilla firefox*/
+  background: -webkit-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for safari*/
+  background: -o-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for opera*/
   margin-bottom: 0.5%;
 }
 
 header h2{
-	color: white;
-text-shadow: 6px 6px 6px black;
+  color: white;
+text-shadow: 10px 6px 6px black; /*to include decoration in the text*/
 }
 
 header article img{
-	width:5%;border-radius: 50%;transition: width 2s;
+	width:5%;border-radius: 50%;
+  transition: width 5s; /*to enable animation in image*/
 }
 header article img:hover{
-  width:6%; height:6%;
+  width:8%; height:8%;
 }
 
 section{
-  background: #f37d73;
-  display: flex; flex-direction: row;
-text-align: center;
-justify-content: space-around;/* to specify the space around the different sections*/
-padding: 2%;
-margin-top: 0.5%;
-
+  background:	#7f7fff;display: flex; flex-direction: row;
+  text-align: center;
+  justify-content: space-around; /*to specify the space around the different sections*/
+  padding: 2%;margin-top: 0.5%;
 }
 
 .sidebar{
-	background: linear-gradient(to right, #b22222, #955251, #b22222, #955251); /*this code is used for google chrome*/
-	background: -moz-linear-gradient(right, #b22222, #955251, #b22222, #955251); /*this code is used for mozilla firefox*/
-  background: -webkit-linear-gradient(right, #b22222, #955251, #b22222, #955251); /*this code is used for safari*/
-  background: -o-linear-gradient(right, #b22222, #955251, #b22222, #955251); /*this code is used for opera*/
-width: 25%; margin-right: 2%; padding: 1%; border-radius: 10%;
+	background: linear-gradient(45deg, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for google chrome*/
+	background: -moz-linear-gradient(45deg, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for mozilla firefox*/
+  background: -webkit-linear-gradient(45deg, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for safari*/
+  background: -o-linear-gradient(45deg, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for opera*/
+width: 25%; margin-right: 2%; padding: 1%;
 }
 
 .sidebar ul{
@@ -54,47 +54,31 @@ width: 25%; margin-right: 2%; padding: 1%; border-radius: 10%;
 }
 
 .sidebar ul li{
-	margin: 1%; padding: 4%; background: #FF6347;
-flex-grow: 1; margin-bottom: 2%;margin-right: 10%;
+	margin: 1%; padding: 4%; background: 	#6666ff;
+flex-grow: 1; margin-bottom: 2%;
+margin-right: 10%; /*apply space at the right side of the list*/
 }
 
 .sidebar ul li:hover{
-	background: #b20000;
+	background: 	#000066; border-radius: 50%;
 }
 
 .sidebar ul li a{
-	color: white;
+	color: white; display: block;
 }
-
-.sidebar ul li ul{
-	display: none;
-}
-
-.sidebar ul li ul li p{
-	margin: 1%; padding: 0.5%; background: #FF6347;
-text-align: center; border-radius: 10%;
-}
-
-.sidebar ul li:hover ul{
-	display: block; background: #b20000;
-}
-
-.sidebar ul li ul li{
-background: #b20000;
-}
-.sidebar ul li ul li a:hover{
-color: yellow;
+.sidebar ul li a:hover{
+  color:yellow;
 }
 
 .image{
-	background: linear-gradient(#b22222, #955251, #b22222, #955251); /*this code is used for google chrome*/
-  background: -moz-linear-gradient(#b22222, #955251, #b22222, #955251); /*this code is used for mozilla firefox*/
-  background: -webkit-linear-gradient(#b22222, #955251, #b22222, #955251); /*this code is used for safari*/
-  background: -o-linear-gradient(#b22222, #955251, #b22222, #955251); /*this code is used for opera*/
-	width: 75%; margin-right: 2%; padding: 1%; border-radius: 10%;
+	background: linear-gradient(#ccccff, #9999ff,#ccccff, #9999ff); /*this is used for google chrome*/
+  background: -moz-linear-gradient(#ccccff, #9999ff,#ccccff, #9999ff); /*this is used for mozilla firefox*/
+  background: -webkit-linear-gradient(#ccccff, #9999ff,#ccccff, #9999ff); /*this is used for safari*/
+  background: -o-linear-gradient(#ccccff, #9999ff,#ccccff, #9999ff); /*this is used for opera*/
+	width: 75%; margin-right: 2%; padding: 1%;
 }
 .image img{
-  width:30%;/* to implenment the sixe of the image*/
+  width:30%; /*to implenment the size of the image*/
 border-radius: 10px 60px;
 transition:transform 2s;
 
@@ -110,14 +94,15 @@ transition:transform 2s;
 }
 
 .image p{
-	font-size: 20px; color: black; text-align: center;
+	font-size: 20px; color: black;
+  text-align: center; /*enable paragraph in the center*/
 }
 
 footer{
-    background: radial-gradient(#bb112a, #913334, #bb112a, #913334); /*this code is used for google chrome*/
-    background: -moz-radial-gradient(#bb112a, #913334, #bb112a, #913334); /*this code is used for mozilla firefox*/
-    background: -webkit-radial-gradient(#bb112a, #913334, #bb112a, #913334); /*this code is used for safari*/
-    background: -o-radial-gradient(#bb112a, #913334, #bb112a, #913334); /*this code is used for opera*/
+  background: linear-gradient(to right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for google chrome*/
+  background: -moz-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for mozilla firefox*/
+  background: -webkit-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for safari*/
+  background: -o-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for opera*/
 
 justify-content: space-around;
 color: black;
@@ -125,17 +110,24 @@ font-size: 18px;
 text-align: center;
 padding: 1.5%;
 margin-bottom: 0.5%;
-display: flex; flex-direction: column;
+display: flex; flex-direction: column; /* display each footer in column*/
 }
 
 footer article h3{
-  text-align: center;text-shadow: 3px 3px 3px white;
+  text-align: center;color: white;
+text-shadow: 10px 6px 6px black;
 }
 .pic {
   text-align: right;
 }
 .pic img{
 width:3%; border-radius: 50%;
+}
+footer article h3 a{
+  color:white;
+}
+footer article h3 a:hover{
+  color:yellow;
 }
 
 
@@ -160,12 +152,10 @@ footer{
 
 footer article{
 	width: 100%;
-	margin-bottom: 1px solid black;
 text-align: center;
 }
 
 footer article:last-child{
-margin-bottom: none;
+margin-bottom: 0px;
 }
-
 }

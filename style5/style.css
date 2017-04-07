@@ -1,75 +1,73 @@
+/*Mijala Shakya*/
 body{
-  font-size: 18px; font-family: cursive;background:	#d3660d;
-  color: white;
+  font-size: 18px; font-family: cursive;background: #7f7fff;color: white;
   margin: 2%;
 }
 h1,h2,h3,h4,h5,h6,p{
   margin-top: 1%; margin-bottom: 1%;padding: 0%;
 }
 li{
-  list-style: none;
+  list-style: none;/*prevents the appearence of ordered list and unordered list*/
 }
 a{
- text-decoration:none;
+ text-decoration:none; /*to prevent underline is hyperlink*/
 }
 header{
-  text-align: center; padding: 4%; color: white;background: radial-gradient(#e9951e, #efe299, #e4951e, #efe299);
+  text-align: center; padding: 4%; color: white;
+  background: linear-gradient(to right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for google chrome*/
+  background: -moz-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for mozilla firefox*/
+  background: -webkit-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for safari*/
+  background: -o-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for opera*/
+  margin-bottom: 0.5%;
 }
 header h2{
-	color: white;
-text-shadow: 3px 3px 3px black;
+  color: white;
+text-shadow: 10px 6px 6px black; /*to include decoration in the text*/
 }
 
 header article img{
-	width:5%;border-radius: 50%;transition: width 2s;
+  width:5%;border-radius: 50%;
+  transition: width 5s; /*to enable animation in image*/
 }
 header article img:hover{
-  width:6%; height:6%;
+  width:8%; height:8%;
 }
 section{
-  background:#f1d375;
+  background:#7f7fff;
    display: flex;flex-direction: row ;text-align: center;
-  justify-content: space-around; padding: 2%; margin-top: 0.5%;
+  justify-content: space-around; /*to specify the space around the different sections*/
+   padding: 2%; margin-top: 0.5%;
 }
 .sidebar{
-  background:radial-gradient(#FAFAD2,#F0E68C,#F0E68C,#FAFAD2,#F0E68C,#F0E68C,#FAFAD2,#F0E68C,#F0E68C);
-
-  width: 25%; margin-right: 2%;padding: 1%; border-radius: 10%;
+  background: linear-gradient(45deg, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for google chrome*/
+  background: -moz-linear-gradient(45deg, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for mozilla firefox*/
+  background: -webkit-linear-gradient(45deg, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for safari*/
+  background: -o-linear-gradient(45deg, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for opera*/
+  width: 25%; margin-right: 2%; padding: 1%;
 }
 .sidebar ul{
   display: flex;flex-flow: column wrap;
 }
 .sidebar ul li{
-  margin:1%;padding: 4%;background:#e9951e; flex-grow: 1; margin-bottom: 2%;
-  margin-right: 10%;
+  margin:1%;padding: 4%;background:#6666ff; flex-grow: 1; margin-bottom: 2%;
+  margin-right: 10%; /*apply space at the right side of the list*/
 }
 .sidebar ul li:hover{
-  background: 	#F4A460;
+  background:#000066;border-radius: 50%;
 }
 .sidebar ul li a{
-  color: white;
+  color: white;display:block;
 }
-.sidebar ul li ul{
-  display :none;
-}
-.sidebar ul li ul li p{
-  margin: 1%;padding: 0.5%;background:#FFA500	;text-align: center;border-radius: 10%
-}
-.sidebar ul li:hover ul{
-  display: block;background: 	#F4A460;
-}
-.sidebar ul li ul li{
-  background:	#F4A460;
-}
-.sidebar ul li ul li a:hover{
-  color: #068481;
+.sidebar ul li a:hover{
+  color:yellow;
 }
 .sent{
-  background:linear-gradient(#FAFAD2,#F0E68C,#F0E68C,#FAFAD2,#F0E68C,#F0E68C,#FAFAD2,#F0E68C,#F0E68C);
-  width:75%;
-  color: black;
-  font-family:cursive;
-  text-align: left
+  background: linear-gradient(#ccccff, #9999ff,#ccccff, #9999ff); /*this is used for google chrome*/
+  background: -moz-linear-gradient(#ccccff, #9999ff,#ccccff, #9999ff); /*this is used for mozilla firefox*/
+  background: -webkit-linear-gradient(#ccccff, #9999ff,#ccccff, #9999ff); /*this is used for safari*/
+  background: -o-linear-gradient(#ccccff, #9999ff,#ccccff, #9999ff); /*this is used for opera*/
+  width:75%;color: black;
+  font-family:cursive;text-align: left; color:white;
 }
 .sent form fieldset legend{
   margin: 2%;
@@ -140,34 +138,44 @@ input[type=date], select {
 
   }
 
-footer{
-  background: radial-gradient(#e9951e, #efe299, #e4951e, #efe299);
-  color: white;
-  font-size: 18px;
-  text-align: center;
-  padding: 1.5%;
-  margin-bottom: 0.5%;
-  display: flex; flex-direction: column;
-}
-footer article h3{
-  text-align: center;text-shadow: 3px 3px 3px black;
-}
-
-.logo {
+  footer{
+    background: linear-gradient(to right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for google chrome*/
+    background: -moz-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for mozilla firefox*/
+    background: -webkit-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for safari*/
+    background: -o-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for opera*/
+    justify-content: space-around;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    padding: 1.5%;
+    margin-bottom: 0.5%;
+    display: flex; flex-direction: column; /*display each footer in column*/
+  }
+  footer article h3{
+    text-align: center;color: white;
+  text-shadow: 10px 6px 6px black;
+  }
+  .logo {
     text-align: right;
-}
-.logo img{
-  width:3%; border-radius: 50%;
-}
+  }
+  .logo img{
+    width:3%; border-radius: 50%;
+  }
+  footer article h3 a{
+    color:white; /*display the color of hyperlink in white color*/
+  }
+  footer article h3 a:hover{
+    color:yellow;
+  }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 600px){ /* for implementing mobile responsive*/
 	section{
-	flex-direction: column;
+	flex-direction: column; /* all the elements im mobile appears in column*/
 }
 
 .sidebar{
 	width:100%;
-margin-bottom: 2%;
+margin-bottom: 2%; /*to apply spacing below the side section*/
 }
 
 .sent{
@@ -183,12 +191,11 @@ footer{
 
 footer article{
 	width: 100%;
-	margin-bottom: 1 px solid black;
-text-align: center;
+  text-align: center;
 }
 
 footer article:last-child{
-margin-bottom: none;
+margin-bottom: 0px;
 }
 
 }

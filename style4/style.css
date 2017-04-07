@@ -1,80 +1,82 @@
+/*Mijala Shakya*/
 body{
-  font-size: 18px; font-family: cursive;background:#00FFAA;
-  color: white;
+  font-size: 18px; font-family: cursive;background: #7f7fff;color: white;
   margin: 2%;
 }
 h1,h2,h3,h4,h5,h6,p{
   margin-top: 1%; margin-bottom: 1%;padding: 0%;
 }
 li{
-  list-style: none;
+  list-style: none; /*prevents the appearence of ordered list and unordered list*/
 }
 a{
- text-decoration:none;
+ text-decoration:none; /*to prevent underline is hyperlink*/
 }
 header{
   text-align: center; padding: 4%; color: white;
-  background:#7CCD7C;
+  background: linear-gradient(to right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for google chrome*/
+  background: -moz-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for mozilla firefox*/
+  background: -webkit-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for safari*/
+  background: -o-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for opera*/
   margin-bottom: 0.5%;
 }
 
 header h2{
 	color: white;
-text-shadow: 3px 3px 3px black;
+text-shadow: 10px 6px 6px black; /*to include decoration in the text*/
 }
 
 header article img{
-	width:5%;border-radius: 50%;transition: width 2s;
+	width:5%;border-radius: 50%;
+  transition: width 5s; /*to enable animation in image*/
 }
 header article img:hover{
-  width:6%; height:6%;
+  width:8%; height:8%;
 }
 
 section{
-  background:#7CCD7C;
+  background:#7f7fff;
    display: flex;flex-direction: row ;text-align: center;
-  justify-content: space-around; padding: 2%; margin-top: 0.5%;
+  justify-content: space-around; /*to specify the space around the different sections*/
+   padding: 2%; margin-top: 0.5%;
 }
 .sidebar{
-  background:#3CB371;
-  width: 25%; margin-right: 2%;padding: 1%; border-radius: 10%;
+  background: linear-gradient(45deg, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for google chrome*/
+  background: -moz-linear-gradient(45deg, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for mozilla firefox*/
+  background: -webkit-linear-gradient(45deg, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for safari*/
+  background: -o-linear-gradient(45deg, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for opera*/
+  width: 25%; margin-right: 2%; padding: 1%;
 }
 .sidebar ul{
   display: flex;flex-flow: column wrap;
 }
 .sidebar ul li{
-  margin:1%;padding: 4%;background:#20BF9F; flex-grow: 1; margin-bottom: 2%;
-  margin-right: 10%;
+  margin:1%;padding: 4%;background:	#6666ff; flex-grow: 1; margin-bottom: 2%;
+  margin-right: 10%; /*apply space at the right side of the list*/
 }
 .sidebar ul li:hover{
-  background: #00FFAA;
-}
+  background: 	#000066;border-radius: 50%;
+  }
+
 .sidebar ul li a{
-  color: white;
+  color: white; display:block;
 }
-.sidebar ul li ul{
-  display :none;
+.sidebar ul li a:hover{
+  color:yellow;
 }
-.sidebar ul li ul li p{
-  margin: 1%;padding: 0.5%;background:#66CDAA	;text-align: center;border-radius: 10%
-}
-.sidebar ul li:hover ul{
-  display: block;background: #00FFAA;
-}
-.sidebar ul li ul li{
-  background: #00FFAA;
-}
-.sidebar ul li ul li a:hover{
-  color: #068481;
 
-}
 .para{
-  background:#3CB371;
-  width:75%;
-  color: black;
-  font-family:cursive;
+  background: linear-gradient(#ccccff, #9999ff,#ccccff, #9999ff); /*this is used for google chrome*/
+  background: -moz-linear-gradient(#ccccff, #9999ff,#ccccff, #9999ff); /*this is used for mozilla firefox*/
+  background: -webkit-linear-gradient(#ccccff, #9999ff,#ccccff, #9999ff); /*this is used for safari*/
+  background: -o-linear-gradient(#ccccff, #9999ff,#ccccff, #9999ff); /*this is used for opera*/
+  width: 75%; margin-right: 2%; padding: 1%;
 }
 
+.para h2{
+  color:white;
+  text-shadow: 2px 4px 2px black;
+}
 .para p{
   text-align: justify;
   margin:4%;
@@ -87,33 +89,43 @@ section{
   width:40%; border-radius: 20% 55%;
 }
 footer{
-  background:#7CCD7C;
+  background: linear-gradient(to right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for google chrome*/
+  background: -moz-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for mozilla firefox*/
+  background: -webkit-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for safari*/
+  background: -o-linear-gradient(right, #ccccff, #9999ff,#ccccff, #9999ff); /*this is used for opera*/
   justify-content: space-around;
-  color: white;
+  color: black;
   font-size: 18px;
   text-align: center;
   padding: 1.5%;
   margin-bottom: 0.5%;
-  display: flex; flex-direction: column;
+  display: flex; flex-direction: column; /*display each footer in column*/
 }
 footer article h3{
-  text-align: center;
-  text-shadow: 3px 3px 3px black;
+  text-align: center;color: white;
+text-shadow: 10px 6px 6px black;
 }
 .logo {
   text-align: right;
 }
 .logo img{
-width:3%; border-radius: 50%;
+  width:3%; border-radius: 50%;
 }
-@media all and (max-width: 600px){
+footer article h3 a{
+  color:white;
+}
+footer article h3 a:hover{
+  color:yellow;
+}
+
+@media all and (max-width: 600px){ /* for implementing mobile responsive*/
 	section{
-	flex-direction: column;
+	flex-direction: column; /* all the elements im mobile appears in column*/
 }
 
 .sidebar{
 	width:100%;
-margin-bottom: 2%;
+margin-bottom: 2%; /*to apply spacing below the side section*/
 }
 
 .para{
@@ -126,12 +138,11 @@ footer{
 
 footer article{
 	width: 100%;
-	margin-bottom: 1px solid black;
-text-align: center;
+  text-align: center;
 }
 
 footer article:last-child{
-margin-bottom: none;
+  margin-bottom: 0px;
 }
 
 }
